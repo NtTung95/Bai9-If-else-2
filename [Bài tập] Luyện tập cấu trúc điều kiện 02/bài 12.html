@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 12</title>
+</head>
+<body>
+<input type="number" id="tien">số tiền gửi tiết kiệm VNĐ <br/>
+<input type="number" id="thang"> số tháng đã gửi <br/>
+<input type="number" id="lai"> % lãi xuất theo tháng <br/>
+<input type="button" value="Xem lãi xuất" onclick="tinh()">
+
+<script>
+    // FV = PV(1+i)**n
+    function tinh(){
+        // let lx = parseInt(document.getElementById("tien").value) * (( 1 + parseInt(document.getElementById("lai").value))**parseInt(document.getElementById("thang").value))
+        let t = parseInt(document.getElementById("tien").value)
+        let m = parseInt(document.getElementById("thang").value)
+        let l = parseFloat(document.getElementById("lai").value)
+        let lx = t * [(1+l)**m]
+        alert( "lãi xuất = " + lx)
+    }
+
+</script>
+</body>
+</html>

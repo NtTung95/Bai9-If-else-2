@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Ứng dụng vui DoYouLoveMe</title>
+</head>
+<body>
+<h1>Do you love me?</h1>
+<button onclick="yes()">Yes</button>
+<button id = nhay style="position:absolute" onmouseover="no()">No</button>
+
+<script>
+    function yes(){
+        alert("<3")
+    }
+
+    function no(){
+        let w = Math.round(Math.random()*window.innerWidth);
+        let h = Math.round(Math.random()*window.innerHeight);
+        let element = document.getElementById("nhay");
+        element.style.left = w + 'px';
+        element.style.top = h + 'px';
+    }
+</script>
+</body>
+</html>

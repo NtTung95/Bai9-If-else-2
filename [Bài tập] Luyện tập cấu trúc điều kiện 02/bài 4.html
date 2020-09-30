@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="number" id="dai" value=""></label>nhập chiều dài<br/>
+<label><input type="number" id="rong" value=""></label>nhập chiều rộng<br/>
+<input type="button" value="Tính diện tích" onclick="doi()">
+
+<script>
+
+    function doi(){
+        let a = parseInt(document.getElementById("dai").value)
+        let b = parseInt(document.getElementById("rong").value)
+        let dt = a*b
+        alert("Diện tích hình chữ nhật = " + dt);
+    }
+</script>
+</body>
+</html>

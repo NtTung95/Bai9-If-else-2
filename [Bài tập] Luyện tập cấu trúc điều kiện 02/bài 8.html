@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 8</title>
+</head>
+<body>
+    <input id="tuoi" type="number">nhập tuổi
+    <input type="button" value="Kiểm tra" onclick="kt()">
+
+<script>
+    function kt() {
+        let n = parseInt(document.getElementById("tuoi").value);
+            if (n < 0) {
+                alert("nhập sai tuổi");
+            } else if (n < 120) {
+                alert("tuổi hợp lệ");
+            } else {
+                alert("chưa ai sống quá 120 tuổi :D");
+            }
+
+    }
+
+</script>
+</body>
+</html>

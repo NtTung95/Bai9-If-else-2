@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+<input type="number" id = "midtermExamScores"> Nhập điểm thi giữa kỳ <br/>
+<input type="number" id = "finalExamScores"> Nhập điểm thi cuối kỳ <br/>
+<input type="button" onclick="submit()" value="Tính điểm">
+<p id = display></p>
+<script>
+    function submit(){
+        let finalGrade = (parseFloat(document.getElementById("midtermExamScores").value)*2 + parseFloat(document.getElementById("finalExamScores").value)*3)/5;
+        document.getElementById("display").innerHTML = "Điểm tổng kết cuối năm: " + finalGrade;
+    }
+</script>
+</body>
+</html>

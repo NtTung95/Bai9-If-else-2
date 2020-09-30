@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+    <label>Tháng </label><input type="number" value="" id="mo" style="width: 50px"/>
+    <input type="button" value="Tính số ngày" onclick="go()">
+    <p></p>
+<script>
+    function go() {
+
+        let month = parseInt(document.getElementById("mo").value);
+
+        switch (month){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.write("Tháng " + document.getElementById("mo").value + " có 31 ngày");
+                break;
+            case 2:
+                document.write("Tháng " + document.getElementById("mo").value + " có 28 hoặc 29 ngày");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.write("Tháng " + document.getElementById("mo").value + " có 30 ngày");
+            break;
+            default:
+                document.write("K có tháng này")
+        }
+    }
+</script>
+</body>
+</html>

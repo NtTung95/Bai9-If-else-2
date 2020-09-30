@@ -1,0 +1,21 @@
+.khung {
+    width: 350px;
+    height: 250px;
+    font-family: arial;
+    font-size: 30px;
+    margin: auto;
+    background: darkgrey;
+}
+table{
+    border: black 5px;
+    margin: auto;
+}
+button {
+    width: 70px;
+    height: 40px;
+    text-align: center;
+}
+input {
+    width: 285px;
+    height: 40px;
+}

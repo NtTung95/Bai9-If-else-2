@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 9</title>
+</head>
+<body>
+
+    <label><input type="number" id="weight" value="" width="200px">Kg</label>
+    <label><input type="number" id="height" value="" width="200px">cm</label>
+    <input type="button" onclick="go()" value="tính BMI"/>
+
+    <script>
+        function go() {
+            let kg = document.getElementById("weight").value;
+            let cm = document.getElementById("height").value;
+            let bmi = 10000*(parseInt(kg) / ((parseInt(cm) * parseInt(cm))));
+
+            if (bmi < 18) {
+                document.write( bmi + " Underweight");
+            } else if (bmi < 25.0) {
+                document.write(bmi + " Normal");
+            } else if (bmi < 30.0) {
+                document.write(bmi + " Overweight");
+            } else {
+                document.write(bmi + " Obese");
+            }
+        }
+
+    </script>
+
+</body>
+</html>

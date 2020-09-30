@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 7</title>
+</head>
+<body>
+Nhập số phút đã gọi: <input type="number" id="minutesToCall"><br/>
+<input type="button" onclick="submit()" value="Tra tiền"><br/>
+<p id="display"></p>
+<script>
+    function submit() {
+        let minutes = parseFloat(document.getElementById("minutesToCall").value);
+        if (minutes > 200) {
+            var telephoneCharges = (minutes-200)*200 + 150*400 + 50*600;
+        } else if (minutes > 150) {
+            var telephoneCharges = (minutes-150)*400 + 50*600;
+        } else {
+            var telephoneCharges = minutes*600;
+        }
+        document.getElementById("display").innerHTML = "Cước dịch vụ điện thoại của bạn là: " + telephoneCharges;
+    }
+</script>
+</body>
+</html>
